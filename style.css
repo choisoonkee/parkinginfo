@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-gap: 5px;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 300px;
+    grid-template-rows: 200px 200px 1fr 200px 100px;
+    grid-template-areas: "header header header" "lside main rside1" "lside main rside2" "lside main rside3" "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: gold;
+    text-align: center;
+    font-size: 100px;
+    padding: 30px;
+}
+
+.lside {
+    grid-area: lside;
+    background-color: lightblue;
+}
+
+.main {
+    grid-area: main;
+    background-color: yellow;
+    padding: 50px;
+}
+
+.rside1 {
+    grid-area: rside1;
+    background-color: green;
+}
+
+.rside2 {
+    grid-area: rside2;
+    background-color: gray;
+}
+
+.rside3 {
+    grid-area: rside3;
+    background-color: pink;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: purple;
+}
+
+ol {
+    font-size: 30px;
+}
